@@ -15,7 +15,7 @@ public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession(false)
         if (session != null) {
             session.invalidate(); // Đăng xuất người dùng nếu có phiên hoạt động
         }
